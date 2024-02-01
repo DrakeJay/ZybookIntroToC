@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main(void) {
+
+   /* Type your code here. */
+   /* Initiliaze variables for input*/
+   float age;
+   float weight;
+   float heart;
+   float min;
+   /* Initiliaze variables for calculation/output*/
+   float avgCalories;
+   
+   /* Get input */
+   scanf( "%f" , &age);
+   scanf( "%f" , &weight);
+   scanf( "%f" , &heart);
+   scanf( "%f" , &min);
+   
+   /* Calculate avgCalories */
+   avgCalories = ((age * 0.2757 + weight * 0.03295 + heart * 1.0781 - 75.4991) * min) / 8.368;
+   
+   /* output */
+   printf("Calories: %0.2lf calories\n" , avgCalories);
+   
+   
+   return 0;
+}
